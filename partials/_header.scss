@@ -1,0 +1,24 @@
+header {
+    width: 100%;
+}
+
+.header-content {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+i {
+    color: $primary-normal;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+@media screen and (max-width: 768px){
+    .header-content {
+        justify-content: center;
+    }
+}

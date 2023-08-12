@@ -1,0 +1,72 @@
+// ############# Layout para centralizar sempre ##########
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+// #########################################################
+
+// ########### Imagem de fundo principal ############
+
+.bg-home:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/background.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+// ####################################################
+
+//  ############ HERO ###############
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.hero h1 {
+    color: $primary-normal;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.hero p {
+    font-weight: 500;
+    color: $white-normal;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.hero button {
+    margin-top: 50px;
+}
+
+.button-primary {
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    color: $white-normal;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: $primary-normal;
+    border: 0;
+    cursor: pointer;
+}
+
+// ####################################################
+
+@media screen and (max-width: 768px){
+    .hero {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
