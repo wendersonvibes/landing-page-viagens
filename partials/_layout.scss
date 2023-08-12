@@ -32,6 +32,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 120px;
+    min-height: 80vh;
 }
 
 .hero h1 {
@@ -50,27 +51,23 @@
     margin-top: 50px;
 }
 
-.hero a {
-    width: 200px;
-    height: 60px;
-}
-
-.hero a:hover {
-    button {
-        color: $primary-normal;
-        background-color: $red-normal;
-    }
+.hero a:hover { 
+    color: $primary-normal;
+    background-color: $red-normal;
 }
 
 .button-primary {
-    width: 200px;
-    height: 60px;
-    border-radius: 50px;
+    padding: 14px 28px;
+    margin: 28px 0;
+    width: 180px;
+
     color: $white-normal;
     font-size: 18px;
     font-weight: 900;
+    
     background-color: $primary-normal;
     border: 0;
+    border-radius: 50px;
     cursor: pointer;
 }
 
