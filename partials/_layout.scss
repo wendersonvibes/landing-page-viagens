@@ -8,7 +8,7 @@
 
 // ########### Imagem de fundo principal ############
 
-.bg-home:before{
+.bg-home::before{
     content: '';
     display: block;
     position: absolute;
@@ -47,6 +47,18 @@
 
 .hero button {
     margin-top: 50px;
+}
+
+.hero a {
+    width: 200px;
+    height: 60px;
+}
+
+.hero a:hover {
+    button {
+        color: $primary-normal;
+        background-color: $red-normal;
+    }
 }
 
 .button-primary {

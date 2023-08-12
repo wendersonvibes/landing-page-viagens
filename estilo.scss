@@ -9,6 +9,8 @@
 @import "partials/color";
 @import "partials/header";
 @import "partials/layout";
+@import "partials/cards";
+@import "partials/cards-2";
 @import "partials/footer";
 
 body {
@@ -19,4 +21,15 @@ body {
 a {
     cursor: pointer;
     text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 50px;
+    background-color: #ffffff;
 }

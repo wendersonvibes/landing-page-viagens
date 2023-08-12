@@ -17,6 +17,23 @@ i {
     gap: 15px;
 }
 
+.header-icons a:hover {
+    i {
+        animation: translateY 0.8s infinite alternate;
+        color: $red-normal;
+    }
+}
+
+@keyframes translateY {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(-8px) scale(1);
+    }
+}
+
 @media screen and (max-width: 768px){
     .header-content {
         justify-content: center;

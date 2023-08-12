@@ -24,6 +24,19 @@ i {
   gap: 15px;
 }
 
+.header-icons a:hover i {
+  animation: translateY 0.8s infinite alternate;
+  color: #fa3d32;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1);
+  }
+}
 @media screen and (max-width: 768px) {
   .header-content {
     justify-content: center;
@@ -35,7 +48,7 @@ i {
   padding: 0 15px;
 }
 
-.bg-home:before {
+.bg-home::before {
   content: "";
   display: block;
   position: absolute;
@@ -73,6 +86,16 @@ i {
   margin-top: 50px;
 }
 
+.hero a {
+  width: 200px;
+  height: 60px;
+}
+
+.hero a:hover button {
+  color: #06121e;
+  background-color: #fa3d32;
+}
+
 .button-primary {
   width: 200px;
   height: 60px;
@@ -91,6 +114,177 @@ i {
     justify-content: center;
   }
 }
+.cards {
+  margin-top: 180px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-grupo {
+  text-align: center;
+}
+.card-grupo h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.circulo {
+  background-color: #ffffff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  opacity: 0.25;
+}
+.circulo img {
+  margin: 25% 0;
+  width: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    margin-top: 100px;
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .card-grupo {
+    text-align: center;
+  }
+  .card-grupo h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .circulo {
+    background-color: #ffffff;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    opacity: 0.25;
+  }
+  .circulo img {
+    margin: 25% 0;
+    width: 70px;
+  }
+}
+.cards-2 {
+  margin-top: 200px;
+}
+
+.cards-2-grupo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 230px;
+}
+.cards-2-grupo img {
+  width: 500px;
+  height: 300px;
+  border-radius: 50px;
+}
+
+.cards-2-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cards-2-texto h3 {
+  font-size: 30px;
+  font-weight: 900;
+  color: #ffffff;
+}
+.cards-2-texto p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .cards-2-grupo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 180px;
+  }
+  .cards-2-grupo img {
+    width: 450px;
+    border-radius: 50px;
+  }
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .cards-2-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .cards-2-texto h3 {
+    font-size: 28px;
+    font-weight: 900;
+    color: #ffffff;
+  }
+  .cards-2-texto p {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+.bg-footer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to top, rgba(6, 18, 30, 0.1), #06121e), url("../assets/footer.jpg");
+  left: 0;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  opacity: 0.9;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.footer-endereco {
+  margin-top: 100px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 0 15px;
+  margin-top: 30px;
+}
+
+.footer-icons a:hover i {
+  color: #fa3d32;
+  animation: translateY 0.8s infinite alternate;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1);
+  }
+}
 body {
   font-family: "Inter", sans-serif;
   background-color: #06121e;
@@ -99,4 +293,15 @@ body {
 a {
   cursor: pointer;
   text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  border-radius: 50px;
+  background-color: #ffffff;
 }/*# sourceMappingURL=estilo.css.map */
