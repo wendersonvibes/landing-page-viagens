@@ -4,6 +4,7 @@
     margin: 0 auto;
     padding: 0 15px;
 }
+
 // #########################################################
 
 // ########### Imagem de fundo principal ############
@@ -22,6 +23,7 @@
     background-repeat: no-repeat;
     opacity: 0.9;
 }
+
 // ####################################################
 
 //  ############ HERO ###############
@@ -37,7 +39,6 @@
     font-weight: 900;
     font-size: 40px;
 }
-
 .hero p {
     font-weight: 500;
     color: $white-normal;
@@ -74,11 +75,16 @@
 }
 
 // ####################################################
-
 @media screen and (max-width: 768px){
     .hero {
         align-items: center;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .hero h1 {
+        font-size: 30px;
     }
 }
 
